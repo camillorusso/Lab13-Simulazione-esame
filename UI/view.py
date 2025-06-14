@@ -25,7 +25,7 @@ class View(ft.UserControl):
         self._page.controls.append(self._title)
 
         self._ddAnno = ft.Dropdown(label="Anno")
-        self._controller.fillDDYear()
+        self._controller.fillDD_year()
         self._btnCreaGrafo = ft.ElevatedButton(text="Vittorie Piloti", on_click=self._controller.handleCreaGrafo)
 
         cont = ft.Container(self._ddAnno, width=250, alignment=ft.alignment.top_left)
